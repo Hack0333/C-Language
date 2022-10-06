@@ -20,7 +20,7 @@ int binarySearch(int arr[],int size,int key){
 
         mid = start + (end - start)/2;
     }
-    return 0;
+    return -1;
 }
 
 void input(int arr[],int n){
@@ -49,7 +49,7 @@ int main(){
     scanf("%d",&key);
 
     index = binarySearch(array,5,key);
-    if(index == 0){
+    if(index < 0){
         printf("Element not found\n");
     }
     else{
